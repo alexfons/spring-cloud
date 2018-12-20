@@ -1,15 +1,21 @@
 package demo.customer.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import java.io.Serializable;
 
 @Entity
 public class State implements Serializable {
 
-    @Id @GeneratedValue
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2353105954441922056L;
+
+	@Id @GeneratedValue
     private Long id;
 
     private String name;

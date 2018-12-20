@@ -1,14 +1,19 @@
 package demo.customer.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
-import java.io.Serializable;
-import java.time.LocalDate;
 
 @Entity
 public class Customer implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5135554164022572238L;
 
 	@Id
     @GeneratedValue
