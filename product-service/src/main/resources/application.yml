@@ -10,12 +10,3 @@ security:
     resource:
       userInfoUri: http://localhost:9999/uaa/user
 
----
-
-spring:
-  profiles: docker
-
-security:
-  oauth2:
-    resource:
-      userInfoUri: http://security-service:9999/uaa/user
